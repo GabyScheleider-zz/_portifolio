@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: #4F4F4F;
+    background-image: url("../../images/sprinkles.svg");
+}
+.b-index{
+    display: grid;
+    grid-template-areas:
+    "nav article logo"
+    "nav article logo";
+    grid-template-columns: 5% 50% 45%;
+    grid-template:
+    "nav article logo" 50px
+    "sarticle logo" 150px
+    / 100px 1fr 50px;
+}
+.nav-left{
+    grid-area: nav;
+    display: grid;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    background-color: #333333;
+}
+.nav-left img{
+    width: 70%;
+}
+
+.article{
+    /* background-color: magenta; */
+    grid-area: article;
+}
+
+.logo{
+    background-color: maroon;
+    grid-area: logo;
+}
